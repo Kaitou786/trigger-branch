@@ -3,7 +3,7 @@ pipeline{
     triggers{
         pollSCM(
             '@midnight', 
-            ignorePostCommitHooks true
+            ignorePostCommitHooks
         )
     }
     stages{
