@@ -2,7 +2,7 @@ pipeline{
     agent{label 'jenkins-slave'}
     triggers{
         pollSCM(
-            '@midnight' 
+            '@midnight', 
             ignorePostCommitHooks true
         )
     }
