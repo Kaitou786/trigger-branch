@@ -1,7 +1,7 @@
 pipeline{
     agent{label 'jenkins-slave'}
     triggers{
-        pollSCM('@midnight')
+        pollSCM('@midnight' ignorePostCommitHooks true)
     }
     stages{
         stage('sample'){
