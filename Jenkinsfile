@@ -1,7 +1,7 @@
 pipeline{
     agent{label 'jenkins-slave'}
     triggers{
-        cron('* * * * *')
+        pollSCM('* * * * *')
     }
     stages{
         stage('sample'){
